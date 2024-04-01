@@ -4,7 +4,7 @@ using ObserverPattern.Events;
 namespace ObserverPattern.Services;
 public class SellProductUseCase : IProductSold
 {
-    public event Action<Product, int> OnProductSold = ProductSold.OnProductSold;
+    public event Action<Product, int> OnProductSold = ProductSold.OnProductSoldNotifySystems;
 
     public void Execute(Product product, int quantity)
     {
